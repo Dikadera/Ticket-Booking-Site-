@@ -1,0 +1,10 @@
+// @mixin mediaQuery ($arg...){
+//     @if length($args)==1{
+//         @media screen and (max-width: nth(args, 1)) {
+//             @content
+//         }
+//     }
+// }
+@mixin mediaQuery (){
+    
+}

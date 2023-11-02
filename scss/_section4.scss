@@ -1,0 +1,51 @@
+@import "_base";
+@import "variable";
+
+
+@mixin Subsec4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $anothertxtclr;
+
+    
+    
+}
+
+@mixin Section4 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    // flex-wrap: wrap;
+    overflow: auto;
+    
+    scrollbar-width: none;
+    gap: 5rem;
+    padding-inline: 10rem;
+
+    .sec4div {
+        width: 300px;
+        height: 450px;
+        margin: 8rem 0;
+        /* border: 2px solid rgb(15, 11, 11); */
+        border-radius:20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.15);
+        transition: all 0.2s ease-in;
+    
+
+    }
+
+    .sec4div:hover {
+        transform: scale(1.1) rotate(5deg);
+        // box-shadow: 0 0 0 10px rgba(0,0,0.12);
+    }
+}

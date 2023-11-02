@@ -1,0 +1,89 @@
+@import "./navbar";
+@import "./variable";
+@import "./base";
+@import "./mixins";
+@import "./_mediaquery";
+@import "./section3";
+@import "./_section4";
+@import "./section5";
+
+
+
+main {
+    header {
+        @include navBar;
+        z-index: 99;
+    }
+
+    .section1 {
+        @include section1;
+
+        @media screen and (max-width: 767px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:  auto;
+            gap: 2rem;
+            .section1p {
+                width: 100%;
+
+            }
+            .section1div {
+                width: 300px;
+            }
+
+            .hero {
+                width: 100%;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                
+                
+            }
+        }
+    }
+
+    .section2 {
+        @include Section2;
+    }
+
+    .section3 {
+        @include Section3;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            margin-top: 200px;
+        }
+    }
+
+        
+
+    .subsec4 {
+        @include Subsec4;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 400px;
+        }
+    }
+    
+
+    .section4 {
+        
+        @include Section4;
+
+        @media screen and (max-width: 767px) {
+            .sec4div{
+                width: 200px;
+            height: 200px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            flex-direction: column;
+            margin-top: 200px;
+
+            }
+            
+        }
+    }
+
+
+}

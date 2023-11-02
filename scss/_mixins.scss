@@ -1,0 +1,116 @@
+@mixin backgroundvec {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 600px;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// @mixin herovec {
+//     width: 600px;
+//     height: 500px;
+
+//     img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: contain;
+//     }
+// }
+
+@mixin section1 {
+    .section1div {
+        @include backgroundvec;
+    }
+
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .section1p {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        width: 50%;
+        // border: 1px solid black;
+        color: $anothertxtclr;
+
+        .button {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            
+            i {
+                display: inline-block;
+                font-size: 40px;
+                vertical-align: middle;
+            }
+        }
+
+    }
+
+    .hero {
+        width: 50%;
+        height: 690px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+        // border: 1px solid black;
+
+    }
+   
+
+    h4 {
+        color: $tertiarytxtclr;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-weight: 100;
+        color: $anothertxtclr;
+    }
+
+    button {
+        background-color: $tertiarycolor;
+        height: 40px;
+        width: 200px;
+        border: none;
+        border-radius: 10px;
+        color: $primarytxtclr;
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 1s ease;
+        
+    }
+    button:hover {
+        background-color: rgb(121, 81, 6);
+    }
+
+    
+    
+}
+
+
+@mixin Section2 {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    
+
+    .firstgrid{
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+}

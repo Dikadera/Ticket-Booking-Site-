@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $anothertxtclr;
+    
+    
+}
+
+li {
+    list-style: none;
+    
+}
+
+main {
+    width: 80%;
+    margin-inline: auto;
+    font-size: 1.6rem;
+    // position: relative;
+}
+
